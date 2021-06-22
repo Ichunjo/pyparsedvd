@@ -1,4 +1,4 @@
-# pyparsebluray
+# pyparsedvd
 
 Parse and extract binary data from dvd files
 
