@@ -9,7 +9,7 @@ from typing import Dict, List
 from ..sector import Sector
 from .sector_offsets import SectorOffset
 
-__all__ = ['VTSPGCI', 'ProgramChain', 'PlaybackTime', 'PGCOffset']
+__all__ = ['VTSPGCI', 'ProgramChain', 'PlaybackTime', 'PGCOffset', 'FRAMERATE']
 
 
 class PGCOffset(IntEnum):
