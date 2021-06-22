@@ -4,7 +4,7 @@ import setuptools
 with open('README.md') as fh:
     long_description = fh.read()
 
-NAME = 'pyparsebluray'
+NAME = 'pyparsedvd'
 VERSION = '0.0.1'
 
 setuptools.setup(
@@ -17,7 +17,7 @@ setuptools.setup(
     long_description_content_type='text/markdown',
     packages=['pyparsedvd', 'pyparsedvd.vts_ifo'],
     package_data={
-        'pyparsebluray': ['py.typed'],
+        'pyparsedvd': ['py.typed'],
     },
     url='https://github.com/Ichunjo/pyparsedvd',
     zip_safe=False,
