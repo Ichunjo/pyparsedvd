@@ -25,3 +25,11 @@ with open('DVD/VIDEO_TS/VTS_01_0.IFO', 'rb') as ifo_file:
     print(vts_pgci)
 
 ```
+
+# TODO
+* Maybe one day add the sectors left
+
+# Credits
+* [ChapterTool](https://github.com/tautcony/ChapterTool)
+* [DVD Video Information](http://dvd.sourceforge.net/dvdinfo/ifo.html)
+  
