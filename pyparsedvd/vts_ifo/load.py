@@ -4,7 +4,7 @@ __all__ = ['load_vts_pgci']
 
 from io import BufferedReader
 
-from .vts_ifo.vts_pgci import VTSPGCI
+from .vts_pgci import VTSPGCI
 
 
 def load_vts_pgci(ifo: BufferedReader) -> VTSPGCI:
