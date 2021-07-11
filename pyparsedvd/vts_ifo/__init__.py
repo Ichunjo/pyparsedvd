@@ -3,4 +3,4 @@ from .vts_pgci import *
 from .load import *
 
 
-__all__ = ['VTSPGCI', 'ProgramChain', 'PlaybackTime', 'PGCOffset', 'load_vts_pgci']
+__all__ = ['VTSPGCI', 'ProgramChain', 'PlaybackTime', 'PGCOffset', 'FRAMERATE', 'load_vts_pgci']
