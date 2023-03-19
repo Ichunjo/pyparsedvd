@@ -90,6 +90,9 @@ class VTSPGCI(Sector):
             self.ifo.seek(offset + PGCOffset.NB_PROGRAMS, os.SEEK_SET)
             nb_program, = self._unpack_byte(1)
 
+            self.ifo.seek(offset + PGCOffset.NB_CELLS, os.SEEK_SET)
+            nb_cells, = self._unpack_byte(1)
+
             self.ifo.seek(offset + PGCOffset.PLAYBACK_TIME, os.SEEK_SET)
             duration = self._get_timespan(self.ifo.read(4))
 
@@ -115,6 +118,8 @@ class VTSPGCI(Sector):
                     self.ifo.seek(offset + program_map_offset + program + 0x01, os.SEEK_SET)
                     exit_cell, = self._unpack_byte(1)
                     exit_cell -= 1
+                else:
+                    exit_cell = nb_cells
 
 
                 for cell in range(entry_cell, exit_cell + 1):
